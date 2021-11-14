@@ -1,0 +1,33 @@
+footer {
+    padding: 64px 0;
+    .footer-logo {
+        padding: 20px 24px 20px 32px;
+        font-weight: 900;
+    }
+    ul {
+        li {
+            a {
+                font-size: 14px;
+                line-height: 26px;
+                color: rgb(83, 98, 124);
+                padding: 6px;
+                display: block;
+                white-space: nowrap;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+    .social-icons {
+        ul {
+            li {
+                a {
+                    &:hover {
+                        color: rgb(71, 90, 107);
+                    }
+                }
+            }
+        }
+    }
+}

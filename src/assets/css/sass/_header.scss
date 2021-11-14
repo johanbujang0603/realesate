@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    height: 72px;
+    background-color: white;
+    border-bottom: 1px solid rgb(233, 236, 241);
+    .site-logo {
+        padding: 20px 24px 20px 32px;
+        font-weight: 900;
+    }
+    .site-menus {
+        display: flex;
+        flex: 1 1 0%;
+        ul {
+            list-style: none;
+            &:first-child {
+                li {
+                    float: left;
+                }
+            }
+            &:last-child {
+                flex: 1 1 0%;
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 12px;
+            }
+            li {
+                a {
+                    position: relative;
+                    display: block;
+                    margin: 0;
+                    padding: 0 16px;
+                    color: rgb(52, 61, 66);
+                    border: 0;
+                    height: 72px;
+                    line-height: 72px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    text-align: center;
+                    &:hover {
+                        outline: 0;
+                        font-weight: 700;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}

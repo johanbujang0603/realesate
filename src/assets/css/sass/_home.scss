@@ -1,0 +1,107 @@
+.banner-wrapper {
+    position: relative;
+    padding: 58px 0;
+    .hero-image {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 487px;
+        overflow: hidden;
+        pointer-events: none;
+        right: 0;
+        img {
+            position: absolute;
+            top: 0;
+            left: 168px;
+            width: 724px;
+            max-width: 724px;
+            height: 487px;
+        }
+    }
+    .search-box {
+        position: relative;
+        padding: 42px 32px 50px;
+        width: 100%;
+        background-color: rgb(249, 248, 252);
+        border-radius: 24px;
+        .search-filters {
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 18px;
+            width: 100%;
+            button {
+                display: inline-block;
+                margin: 0 4px 8px;
+                padding: 0 18px;
+                font-size: 17px;
+                line-height: 44px;
+                color: rgb(52, 61, 66);
+                background-color: transparent;
+                border: 0;
+                cursor: pointer;
+                font-weight: 700;
+                &:after {
+                    content: "";
+                    display: block;
+                    height: 4px;
+                    background: linear-gradient(270deg, rgb(240, 114, 147) 0%, rgb(235, 44, 212) 50%, rgb(134, 60, 224) 100%);
+                    border-radius: 2px;
+                    margin-left: -16px;
+                    margin-right: -16px;
+                    opacity: 0;
+                }
+                &:hover {
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .search-input {
+            position: relative;
+            padding: 8px 0;
+            max-width: 920px;
+            margin: 0 auto;
+            input {
+                width: 100%;
+                padding: 20px;
+                border: 0;
+                border-radius: 35px;
+                height: 70px;
+                box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 5px 0px;
+                &:focus {
+                    outline: 0;
+                    border: 0;
+                }
+            }
+            button {
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+.phone-app-wrapper {
+    .container {
+        position: relative;
+        padding: 56px;
+        background: linear-gradient(270deg, rgb(240, 114, 147) 0%, rgb(235, 44, 212) 50%, rgb(134, 60, 224) 100%);
+        border-radius: 12px;
+        &:after {
+            content: '';
+            position: absolute;
+            right: 130px;
+            bottom: 0;
+            background-image: url('../../img/homely-mobile-app-new-property-listing-view.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 223px;
+            height: 285px;
+        }
+    }
+}

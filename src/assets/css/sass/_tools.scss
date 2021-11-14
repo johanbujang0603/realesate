@@ -1,0 +1,46 @@
+.has-section-starter {
+    .container {
+        &:before {
+            content: '';
+            display: block;
+            height: 4px;
+            width: 160px;
+            margin-bottom: 32px;
+            background: linear-gradient(270deg, rgb(240, 114, 147) 0%, rgb(235, 44, 212) 50.64%, rgb(134, 60, 224) 100%);
+            border-radius: 2px;
+        }
+    }
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(270deg, rgb(240, 114, 147) 0%, rgb(235, 44, 212) 50%, rgb(134, 60, 224) 100%);
+}
+
+.logo-raywhite {
+    background-color: rgb(255, 226, 6);
+}
+
+.logo-ljhooker {
+    background-color: rgb(0, 0, 0);
+}
+
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 6px 0px;
+    z-index: 1;
+    cursor: pointer;
+    &.arrow-prev {
+        left: -10px;
+    }
+    &.arrow-next {
+        right: -10px;
+    } 
+}
